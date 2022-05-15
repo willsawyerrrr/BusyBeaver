@@ -144,15 +144,20 @@ class TuringMachine:
             # Share our state with the caller.
             # Also give them a chance to control our execution.
             action = self.states_to_actions.get(state)
-            yield (
-                action,
-                {
+            configuration = {
                     'state': state,
                     'left_hand_side': left_hand_side,
                     'symbol': symbol,
                     'right_hand_side': right_hand_side,
                 }
+            print(
+                    "{state:<30} {left}[{symbol}]{right}".format(
+                        left=''.join(reversed(configuration['left-hand-side'])),
+                        right=''.join(configuration['right-hand-side']),
+                        **configuration
+                    )
             )
+            yield (action, configuration)
 
             # Check whether we need to stop the execution.
             if action is not None:
