@@ -1,0 +1,6 @@
+The Turing Machine given in example 1 determines whether the input string is
+exactly "##". It cannot be preceeded by anything - including whitespace - or
+followed by anything - again,  including  whitespace. If the given string is
+exactly "##", the machine accepts;  if the machine determines that the given
+string is anything other than "##", it rejects immediately.
+
