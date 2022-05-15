@@ -1,0 +1,8 @@
+The Turing Machine in example 1 has the following states:
+  State       Represents
+    q0          the initial state
+    saw_#       exactly one '#' character has been read
+    saw_##      exactly two consecutive '#' characters have been read
+    qa          the accept state
+    qr          the reject state
+
