@@ -6,3 +6,19 @@ The Turing Machine in example 1 has the following states:
     qa          the accept state
     qr          the reject state
 
+
+The Turing Machine in example 2 has the following states:
+  State               Represents
+    q0                  
+    Check0              
+    Check1              
+    End                 
+    FindDelimeter0      
+    FindDelimeter1      
+    FindLeftmost        
+    FindNext            
+    Check0              
+    Check1                  
+    qa                  
+    qr                 
+
