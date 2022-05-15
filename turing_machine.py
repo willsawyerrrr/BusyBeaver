@@ -151,11 +151,11 @@ class TuringMachine:
                     'right_hand_side': right_hand_side,
                 }
             print(
-                    "{state:<30} {left}[{symbol}]{right}".format(
-                        left=''.join(reversed(configuration['left_hand_side'])),
-                        right=''.join(configuration['right_hand_side']),
-                        **configuration
-                    )
+                "{state:<30} {left}[{symbol}]{right}".format(
+                    left=''.join(reversed(configuration['left_hand_side'])),
+                    right=''.join(configuration['right_hand_side']),
+                    **configuration
+                )
             )
             yield (action, configuration)
 
