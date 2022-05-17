@@ -178,7 +178,7 @@ class TuringMachine:
                     # Pretend that we always have a blank symbol on the right.
                     symbol = self.blank_symbol
 
-            elif direction == 'R':
+            elif direction == 'L':
                 right_hand_side.insert(0, symbol)
 
                 try:
