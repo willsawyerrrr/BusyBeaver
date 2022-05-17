@@ -1,6 +1,5 @@
 from turing_machine import TuringMachine
 
-
 machine = TuringMachine(
     {
         ('q0', '#'): ('End', '#', 'R'),
@@ -37,6 +36,6 @@ machine = TuringMachine(
     }
 )
 
-w = "" #try some strings here to find out what the machine accepts and rejects
-print("Input:",w)
-print("Accepted?", machine.accepts(w))
+while True:
+    input = input("Input: ")
+    print("Accepted?", machine.accepts(input))
