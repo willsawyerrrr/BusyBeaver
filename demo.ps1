@@ -1,4 +1,4 @@
-function Open-Code {
+function Open-File {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory)]
@@ -78,13 +78,13 @@ Clear-Host
 Write-Host "Part I) Turing Machine Simulator`n"
 
 Write-Host "`n`ta) List the states for each of the example Turing Machines.`n"
-Open-Code -Filename "states.txt"
+Open-File -Filename "states.txt"
 
 Write-Host "`n`tb) Change the run command so that one can observe the configuration of the machine at each transition.`n"
-Open-Code -Filename "turing_machine.py" -LineNumber 143
+Open-File -Filename "turing_machine.py" -LineNumber 143
 
 Write-Host "`n`tc) Describe the computation performed by each of the example Turing Machines.`n"
-Open-Code -Filename "descriptions.txt"
+Open-File -Filename "descriptions.txt"
 
 Next-Section -Section "II"
 
@@ -93,12 +93,12 @@ Next-Section -Section "II"
 Write-Host "Part II) Turing Machine Arithmetic`n"
 
 Write-Host "`n`ta) Create a Turing Machine that computes the addition of two unary numbers.`n"
-Open-Code -Filename "adder.py"
+Open-File -Filename "adder.py"
 Run-Program -Filename "adder.py" -Args "110111"
 Run-Program -Filename "adder.py" -Args "11101111"
 
 Write-Host "`n`tb) Create a Turing Machine that computes the multiplication of two unary numbers.`n"
-Open-Code -Filename "multiplier.py"
+Open-File -Filename "multiplier.py"
 Run-Program -Filename "multiplier.py" -Args "110111"
 Run-Program -Filename "multiplier.py" -Args "111011111"
 
@@ -109,29 +109,32 @@ Next-Section -Section "III"
 Write-Host "Part III) Busy Beaver`n"
 
 Write-Host "`n`ta) Modify the Turing Machine so that it uses a double-sided infinite tape.`n"
-Open-Code -Filename "double_sided.py" -LineNumber 177
+Open-File -Filename "double_sided.py" -LineNumber 177
 
 Write-Host "`n`tb) Why is using Python generators advantageous in Turing Machine simulations?`n"
-Open-Code -Filename "generators.txt"
+Open-File -Filename "generators.txt"
 
 Write-Host "`n`tc) Program a Turing Machine to run the given 2-card Busy Beaver program. How many ones does it produce?`n"
-Open-Code -Filename "two_card.txt"
+Open-File -Filename "two_card.txt"
+Open-File -File "two_card.py"
 Run-Program -Filename "two_card.py"
 
 Write-Host "`n`td) How does this result compare to the known programs?`n"
-Open-Code -Filename "comparison.txt"
+Open-File -Filename "comparison.txt"
 
 Clear-Host
 Write-Host "Part III) Busy Beaver`n"
 
 Write-Host "`n`te) Write three- and four-card Busy Beaver programs. Demonstrate the number of '1's they produce.`n"
-Open-Code -Filename "three_card.txt"
+Open-File -Filename "three_card.txt"
+Open-File -File "three_card.py"
 Run-Program -Filename "three_card.py"
-Open-Code -Filename "four_card.txt"
+Open-File -Filename "four_card.txt"
+Open-File -File "four_card.py"
 Run-Program -Filename "four_card.py"
 
 Write-Host "`n`tf) Can you find a new five-card Busy Beaver program?`n"
-Open-Code -Filename "five_card.txt"
+Open-File -Filename "five_card.txt"
 
 
 
