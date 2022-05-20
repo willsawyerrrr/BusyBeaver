@@ -12,7 +12,6 @@ from turing_machine import TuringMachine
 import sys
 
 def main(input):
-    print(input)
     #create the Turing machine
     adder = TuringMachine(
         {
