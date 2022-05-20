@@ -1,0 +1,9 @@
+Turing Machines, by definition, are able to run infinitely. As such, being able
+to control the execution of a TM simulation allows us to more reasonably manage
+its operation and prevent it from draining resources infinitely - or as
+infinitely as plausible for a simulation.
+
+Using Python generators allows us to gain this extra control over the Turing
+Machine simulation by yielding results at each transition of the machine. We
+also benefit from being able to print configuration information to see how the
+Machine is behaving from a human-readable perspective.
