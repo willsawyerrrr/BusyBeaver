@@ -46,7 +46,7 @@ function Run-Program {
         Write-Host "`t`tRunning " -NoNewline
         Write-Host "$Filename" -ForegroundColor red -NoNewline
         Write-Host "...`n"
-        python $Filename
+        python $Filename $Args
     } else {
         Write-Host "`t`tSkipping " -NoNewline
         Write-Host "$Filename" -ForegroundColor red -NoNewline
