@@ -9,5 +9,5 @@ machine = TuringMachine(
 )
 
 while True:
-    input = input("Input: ")
-    print("Accepted?", machine.accepts(input))
+    word = input("Input: ")
+    print("Accepted?", machine.accepts(word))
