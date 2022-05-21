@@ -4,3 +4,34 @@ followed by anything - again,  including  whitespace. If the given string is
 exactly "##", the machine accepts;  if the machine determines that the given
 string is anything other than "##", it rejects immediately.
 
+
+The Turing Machine given in example 2 determines whether the given input string
+satisfies the following regular expression:
+        [(0 [01]* # X* 0 [01X#]* '') (1 [01]* # X* 1 [01X#]* '')]* # X* ''
+Where:
+        (0 [01]* # X* 0 [01X#]* '') is satisfied by:
+            "0#0";
+            "0B#0", where B is any (possibly empty) binary string;
+            "0B#C0", where C is any (possibly zero) number of consecutive 'X's;
+            "0B#C0A", where A is any (possibly empty) string.
+        These strings must also be terminated by an empty string.
+        
+        (1 [01]* # X* 1 [01X#]* '') is satisfied by:
+            "1#1";
+            "1B#1", where B is any (possibly empty) binary string;
+            "1B#C1", where C is any (possibly zero) number of consecutive 'X's;
+            "1B#C1A", where A is any (possibly empty) string.
+        These strings must also be terminated by an empty string.
+        
+        [(0 [01]* # X* 0 [01X#]* '') (1 [01]* # X* 1 [01X#]* '')] represents a
+            string satisfying either of the above expressions.
+        
+        [(0 [01]* # X* 0 [01X#]* '') (1 [01]* # X* 1 [01X#]* '')]* represents
+            any (possibly zero) number of strings satisfying the previously
+            explained expression
+        
+        [(0 [01]* # X* 0 [01X#]* '') (1 [01]* # X* 1 [01X#]* '')]* # X* ''
+            represents the previously explained expression followed by a string
+            which begins with a '#', contains any (possibly zero) number of 'X's
+            and is terminated by an empty string
+
