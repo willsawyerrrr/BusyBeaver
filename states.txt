@@ -9,16 +9,14 @@ The Turing Machine in example 1 has the following states:
 
 The Turing Machine in example 2 has the following states:
   State               Represents
-    q0                  
-    Check0              
-    Check1              
-    End                 
-    FindDelimeter0      
-    FindDelimeter1      
-    FindLeftmost        
-    FindNext            
-    Check0              
-    Check1                  
-    qa                  
-    qr                 
+    q0                  the initial state
+    Check0              searching for '0'
+    Check1              searching for '1'
+    End                 ready to end on empty string
+    FindDelimeter0      searching for '#'
+    FindDelimeter1      searching for '#'
+    FindLeftmost        returning to beginning of input string
+    FindNext            begins loop again
+    qa                  the accept state
+    qr                  the reject state
 
