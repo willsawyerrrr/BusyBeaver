@@ -115,8 +115,7 @@ Write-Host "`n`tb) Why is using Python generators advantageous in Turing Machine
 Open-File -Filename "generators.txt"
 
 Write-Host "`n`tc) Program a Turing Machine to run the given 2-card Busy Beaver program. How many ones does it produce?`n"
-Open-File -Filename "two_card.txt"
-Open-File -File "two_card.py"
+Open-File -Filename "two_card.py"
 Run-Program -Filename "two_card.py"
 
 Write-Host "`n`td) How does this result compare to the known programs?`n"
@@ -126,11 +125,9 @@ Clear-Host
 Write-Host "Part III) Busy Beaver`n"
 
 Write-Host "`n`te) Write three- and four-card Busy Beaver programs. Demonstrate the number of '1's they produce.`n"
-Open-File -Filename "three_card.txt"
-Open-File -File "three_card.py"
+Open-File -Filename "three_card.py"
 Run-Program -Filename "three_card.py"
-Open-File -Filename "four_card.txt"
-Open-File -File "four_card.py"
+Open-File -Filename "four_card.py"
 Run-Program -Filename "four_card.py"
 
 Write-Host "`n`tf) Can you find a new five-card Busy Beaver program?`n"
