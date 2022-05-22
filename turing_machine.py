@@ -148,8 +148,8 @@ class TuringMachine:
                     'state': state,
                     'left_hand_side': left_hand_side,
                     'symbol': symbol,
-                    'right_hand_side': right_hand_side,
-                }
+                    'right_hand_side': right_hand_side
+            }
             print(
                 "{state:<30} {left}[{symbol}]{right}".format(
                     left=''.join(reversed(configuration['left_hand_side'])),

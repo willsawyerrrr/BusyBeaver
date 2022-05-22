@@ -25,7 +25,7 @@ bbeaver = TuringMachine(
         ("d", "1"): ("e", "0", "L"),
 
         ("e", "0"): ("c", "1", "R"),
-        ("e", "1"): ("a", "1", "L"),
+        ("e", "1"): ("a", "1", "L")
     },
     start_state='a', accept_state='h', reject_state='r', blank_symbol='0'
 )
