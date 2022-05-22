@@ -132,6 +132,7 @@ Run-Program -Filename "four_card.py"
 
 Write-Host "`n`tf) Can you find a new five-card Busy Beaver program?`n"
 Open-File -Filename "five_card.txt"
+Run-Program -Filename "five_card.py"
 
 
 

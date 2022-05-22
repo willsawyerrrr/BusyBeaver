@@ -1,0 +1,17 @@
+|-------------------------------------------------------|
+| Current State |   A   |   B   |   C   |   D   |   E   |
+|---------------|-------|-------|-------|-------|-------|
+|  Read Symbol  | 0 | 1 | 0 | 1 | 0 | 1 | 0 | 1 | 0 | 1 |
+|---------------|-------|-------|-------|-------|-------|
+|  Next State   | E | H | D | E | B | B | C | E | C | A |
+|---------------|-------|-------|-------|-------|-------|
+| Write Symbol  | 1 | 1 | 1 | 1 | 0 | 1 | 1 | 0 | 1 | 1 |
+|---------------|-------|-------|-------|-------|-------|
+| Move R/W Head | L | R | L | R | L | R | R | L | R | L |
+|---------------|-------|-------|-------|-------|-------|
+
+The above 5-card Busy Beaver program halts after 17 transitions and outputs:
+    111101
+The five '1's output by this program is negligible, compared to the winning
+5-card program: it is known that the winner will output more than 10 ** 352
+'1's.
