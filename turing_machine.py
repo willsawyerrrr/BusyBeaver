@@ -178,12 +178,10 @@ class TuringMachine:
                     # Pretend that we always have a blank symbol on the right.
                     symbol = self.blank_symbol
 
-            #!<<<<<<<<< MODIFY BELOW >>>>>>>>>>>>
-            elif left_hand_side: #!<<<< MODIFY THIS SECTION OF IF STATEMENT FOR PART 3a
+            elif left_hand_side:
                 # Move to the left only if there is a symbold to move.
                 right_hand_side.insert(0, symbol)
                 symbol = left_hand_side.pop(0)
-            #!<<<<<<<<< MODIFY ABOVE >>>>>>>>>>>>
 
             else:
                 assert direction in 'LR', 'L (left) and R (right) are the only correct directions to move.'
